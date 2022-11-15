@@ -10,7 +10,7 @@ const Blogpost = () => {
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [post, setPost] = useState({ title: undefined, text: undefined });
     const hs = { Accept: "application/json", "Content-Type": "application/json", Authorization: `Bearer ${auth.getToken()}` };
-	const url = `http://laravel-1115-api.herokuapp.com//api/posts`;
+	const url = `https://laravel-1115-api.herokuapp.com//api/posts`;
 	
 
 
