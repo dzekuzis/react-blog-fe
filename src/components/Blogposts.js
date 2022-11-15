@@ -12,7 +12,7 @@ const BlogPosts = () => {
 	const auth = useContext(AuthContext)
 
     useEffect(() => {
-		fetch("http://localhost:8000/api/posts")
+		fetch("https://laravel-1115-api.herokuapp.com/api/posts")
 			.then((res) => res.json())
 			.then(
 				(res) => {
@@ -27,7 +27,7 @@ const BlogPosts = () => {
 	}, []);
 
     const deletePost = (id, e) => {
-		fetch("http://localhost:8000/api/posts/" + id, {
+		fetch("https://laravel-1115-api.herokuapp.com/api/posts/" + id, {
 			method: "DELETE",
 			headers: {
 				Accept: "application/json",
